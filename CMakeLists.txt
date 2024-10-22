@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8 FATAL_ERROR)
-project(from_scratch VERSION 0.1.0 LANGUAGES CXX)
+project(project_name VERSION 0.1.0 LANGUAGES CXX)
 
 find_package( OpenGL REQUIRED )
 include_directories( ${OPENGL_INCLUDE_DIRS} )
@@ -21,4 +21,4 @@ add_subdirectory(3rdparty/glew)
 add_subdirectory(3rdparty/glfw)
 add_subdirectory(3rdparty/glm)
 add_subdirectory(3rdparty/assimp)
-add_subdirectory(breakout)
+add_subdirectory(application)
