@@ -18,7 +18,7 @@ int main() {
 	while(glfwWindowShouldClose(window))
 	{
 		glClear(GL_COLOR_BUFFER_BIT);
-		
+
 
 		glfwPollEvents();
 		glfwSwapBuffers(window);
@@ -27,3 +27,17 @@ int main() {
 
 	return 0;
 }
+
+/*
+[submodule "3rdparty/glew"]
+	path = 3rdparty/glew
+	url = https://github.com/Perlmint/glew-cmake.git
+[submodule "3rdparty/glm"]
+	path = 3rdparty/glm
+	url = https://github.com/g-truc/glm.git
+[submodule "3rdparty/imgui"]
+	path = 3rdparty/imgui
+	url = https://github.com/ocornut/imgui.git
+	branch = docking
+
+*/
