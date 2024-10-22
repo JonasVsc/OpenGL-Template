@@ -1,2 +1,9 @@
-# breakout
-game made using opengl
+# OpenGL Application template using CMake
+
+Submodules list
+ - glfw
+ - glew
+ - glm
+ - imgui
+ - assimp
+ - stb_image.h
