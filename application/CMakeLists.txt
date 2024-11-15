@@ -20,6 +20,7 @@ add_executable(${PROJECT_NAME}
 	${IMGUI_DIR}/backends/imgui_impl_opengl3.cpp
 )
 
+target_include_directories(${PROJECT_NAME} PUBLIC ../3rdparty/asio/include)
 target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES} glfw )
 target_link_libraries(${PROJECT_NAME} libglew_static)
 target_link_libraries(${PROJECT_NAME} glm)
