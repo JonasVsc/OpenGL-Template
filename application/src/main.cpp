@@ -1,5 +1,6 @@
-#include <GL/glew.h>
+#include <glad/gl.h>
 #include <GLFW/glfw3.h>
+
 
 int main() {
 
@@ -9,11 +10,12 @@ int main() {
 
 	window = glfwCreateWindow(1280, 720, "OpenGL Application", NULL, NULL);
 	glfwMakeContextCurrent(window);
-
-	glewInit();
+	
+	int status = gladLoadGL((GLADloadfunc)glfwGetProcAddress);
 
 	while(!glfwWindowShouldClose(window))
 	{
+		glClearColor(0.5f, 1.0f, 1.0f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
 
