@@ -17,8 +17,8 @@ set(CMAKE_LOG_LEVEL ERROR)
 
 # Set ImGui direcories
 
-add_subdirectory(3rdparty/glew)
+add_subdirectory(3rdparty/asio)
+add_subdirectory(3rdparty/glad)
 add_subdirectory(3rdparty/glfw)
 add_subdirectory(3rdparty/glm)
-add_subdirectory(3rdparty/assimp)
 add_subdirectory(application)
